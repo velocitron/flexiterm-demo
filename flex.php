@@ -6,7 +6,6 @@ header('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Acc
 session_start();
 $id = session_id();
 $_SESSION['id'] = $id;
-$_SESSION['redirect'] = 100;
 /*
 	Only one user can write to the db at a time
 	So we create a Semphore.txt file when a user is writing to the db.
