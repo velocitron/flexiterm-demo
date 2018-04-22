@@ -1,0 +1,230 @@
+body {
+  /*color: rgba(0,0,0,.65);*/
+  font-family: "Roboto Slab", serif !important;
+}
+a {
+  border-bottom: none;
+}
+textarea{
+  overflow: scroll;
+  resize: none;
+  font-family: "Roboto Slab", serif !important;
+}
+
+#main > .inner > section {
+  padding: 2em 0 1em 0;
+}
+
+.input-row{
+  margin-top: 1.3em;
+}
+
+.button-row {
+  text-align: center;
+}
+
+.radio-button {
+  width: 15%;
+}
+.input-section {
+  width: 70%;
+
+}
+.submit-button {
+  margin-left: 15%;
+}
+input {
+  font-family: "Roboto Slab", serif !important;
+}
+
+input[type="file"] label {
+  color: red;
+}
+.small-text {
+  font-size: 80%;
+  float: right;
+/*  margin-left: 85%;*/
+}
+
+form .error {
+  color: #ff0000;
+}
+
+.general-error-message {
+  display: none;
+  text-align: center;
+  color:  #ff0000;
+  font-weight: bold;
+}
+
+
+.invalid {
+  border: solid 2px #ff0000 !important; 
+}
+
+.error-message {
+    font-size: 80%;
+    font-weight: bold;
+    color: #ff0000;
+    display: none;
+
+}
+.message-section{
+  background-color: red;
+}
+
+.table-count {
+  font-size: 86%;
+  float: right;
+  text-align: right;
+  color: #737373;
+  font-weight: lighter;
+}
+
+.table-menu {
+  color: #f56a6a;
+  font-weight: bold;
+}
+.reset-button {
+  padding-right: 1em;
+}
+.table-menu-items{
+  padding-left: 1em !important;
+}
+.no-results{
+  text-align: center;
+  margin-top: 50%;
+}
+.dataTables_length > label,
+.dataTables_filter >label
+ {
+  width: 400px !important;
+}
+select[name="term-results_length"] {
+  display: inline !important;
+  width: 15%;
+  height: 30%;
+  font-size: 100%;
+}
+.dataTables_filter {
+  float: right;
+}
+input[type="search"] {
+  display: inline !important;
+  width: 60%;
+  font-size: 100%;
+}
+
+
+
+#tab-container {
+  margin-top: 1em !important; 
+}
+#tabs > ul {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right:none;
+}
+.ui-tabs-active,
+.ui-state-active {
+  background-color: #808080 !important;
+  color: white;
+  border-color: #ccc !important;
+}
+.ui-state-default, 
+.ui-widget-content 
+.ui-state-default, 
+.ui-widget-header 
+.ui-state-default
+.ui-state-hover{
+  background-color: white;
+  color: black !important;
+}
+
+.ui-tabs-anchor:hover {
+  background-color: #f56a6a !important;
+  color: white !important;
+
+}
+.highlight {
+  background-color: #fab7b7 !important;
+  padding: 1.5px 1px 1.5px 1px;
+}
+#document {
+  overflow: scroll;
+}
+
+.style-tabs .ui-tabs-nav li .a { 
+  color: black !important;
+}
+
+#tabs-3 > ul{
+  list-style-type: none;
+  line-height: 2em;
+}
+.dow-text {
+  font-family: "Roboto Slab", serif !important;
+  font-size: 1.12em;
+  cursor: pointer;
+  color: #f56a6a;
+}
+.dow-icon {
+  color: #f56a6a;
+  margin-right: 10px;
+}
+.dow-button {
+  height:30px;
+}
+#download-warning {
+  font-size: 80%;
+}
+.overlay {
+  position: fixed; 
+  display: none;
+  width: 100%; 
+  height: 100%; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2;
+
+}
+.loading {
+   display: none;
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #f56a6a; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+.loading-text {
+  color: #f2f2f2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 70px;
+  margin-left: -30px;
+  font-size: 14px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animation */
+

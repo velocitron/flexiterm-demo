@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FlexiTerm homepage</title>
+  <meta charset='utf-8'>
+  <meta content='width=device-width, initial-scale=1, user-scalable=no' name='viewport'>
+  <script src='./assets/js/jquery.min.js' type='text/javascript'>
+  </script>
+  <script src="./assets/js/flex.js" type='text/javascript'>
+  </script>
+  <link href='./assets/css/flexiterm.css' rel='stylesheet'>
+  <link href='./assets/css/secondary.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- Wrapper -->
+  <div id='wrapper'>
+    <!-- Main -->
+    <div id='main'>
+      <div class='inner'>
+        <div class='overlay'>
+          <div class='loading'></div>
+          <div class='loading-text'>
+            Loading...
+          </div>
+        </div><!-- Header -->
+        <header id='header'>
+          <a class='logo' href='flexiterm.html'><strong>Flexi</strong>Term</a>
+        </header><!-- Section -->
+        <section>
+          <div class='general-error-message'>
+            Please enter an input
+          </div><!-- UPLOAD FILE-->
+          <form action='' id='form' name="form">
+            <div class='row input-row'>
+              <div class='radio radio-button'>
+                <input id='upload-radio' name='input' type='radio'> <label for='upload-radio'>Upload</label>
+              </div>
+              <div class='input-section'>
+                <input class='user-input' id='upload' name='upload' type='file'> <span class='error-message' id='upload-error'>Invalid input - only .txt and 4kb or less allowed</span>
+              </div>
+            </div><!-- URL  -->
+            <div class='row input-row'>
+              <div class='radio radio-button'>
+                <input id='url-radio' name='input' type='radio'> <label for='url-radio'>Url</label>
+              </div>
+              <div class='input-section'>
+                <input class='user-input' data-validation='url' id='url' name='url' placeholder='Enter url here' type='text'> <span class='error-message' id='url-error'>Invalid input - please enter a valid .txt url</span>
+              </div>
+            </div><!-- TEXT  -->
+            <div class='row input-row'>
+              <div class='radio radio-button'>
+                <input id='textbox-radio' name='input' type='radio'> <label for='textbox-radio'>Text</label>
+              </div>
+              <div class='input-section'>
+                <textarea class='user-input' id='textbox' name='textbox' placeholder='Enter plain text here' rows='10'></textarea> <span class='error-message' id='textbox-error'>Invalid input - max of 600 words allowed</span><span class="small-text"><span id='word-count'>0</span> words</span>
+              </div>
+            </div>
+          </form>
+          <div class='row input-row'>
+            <div class='submit-button'>
+              <button id='clear-input'>Clear</button> <button class='special' id='submit'>Submit</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div><!-- Sidebar -->
+    <div id='sidebar'>
+      <div class='inner'>
+        <!-- Menu -->
+        <nav id='menu'>
+          <header class='major'>
+            <h2>Menu</h2>
+          </header>
+          <ul>
+            <li>
+              <a href='flexiterm.html'>Home</a>
+            </li>
+            <li>
+              <a href='flexiterm.html#about'>About</a>
+            </li>
+            <li>
+              <a href='flexiterm.html#download'>Download</a>
+            </li>
+            <li>
+              <a href='flexiterm.html#publications'>Publications</a>
+            </li>
+            <li>
+              <a href='demo.html'>Demo</a>
+            </li>
+          </ul>
+        </nav><!-- Section -->
+        <section>
+          <header class='major'>
+            <h2>Contact</h2>
+          </header>
+          <ul class='contact'>
+            <li class='fa-envelope-o'>i.spasic@cs.cardiff.ac.uk</li>
+            <li class='fa-phone'>+44(0)29 2087 0320</li>
+            <li class='fa-home'>School of Computer Science &amp; Informatics, Cardiff University<br>
+            Queen's Buildings<br>
+            5 The Parade<br>
+            Cardiff CF24 3AA<br>
+            UK</li>
+          </ul>
+        </section><!-- Footer -->
+        <footer id='footer'>
+          <p class='copyright'>&copy; Irena Spasi&#263;. All rights reserved.</p>
+        </footer>
+        <div id='eXTReMe'>
+          <a href='https://extremetracking.com/open?login=ispasic'><img alt='eXTReMe Tracker' height='38' id='EXim' src='https://t1.extreme-dm.com/i.gif' style='border: 0;' width='41'></a> 
+          <script type='text/javascript'>
+               <!--
+               // var EXlogin='ispasic' // Login
+               // var EXvsrv='s11' // VServer
+               // EXs=screen;EXw=EXs.width;navigator.appName!='Netscape'?
+               // EXb=EXs.colorDepth:EXb=EXs.pixelDepth;
+               // navigator.javaEnabled()==1?EXjv='y':EXjv='n';
+               // EXd=document;EXw?'':EXw='na';EXb?'':EXb='na';
+               // EXd.write('<img src=http://e2.extreme-dm.com',
+               // '/'+EXvsrv+'.g?login='+EXlogin+'&amp;',
+               // 'jv='+EXjv+'&amp;j=y&amp;srw='+EXw+'&amp;srb='+EXb+'&amp;',
+               // 'l='+escape(EXd.referrer)+' height=1 width=1>');//-->
+          </script> <noscript>
+          <div id='neXTReMe'><img alt='' height='1' src='https://e2.extreme-dm.com/s11.g?login=ispasic&amp;j=n&amp;jv=n' width='1'></div></noscript>
+        </div>
+      </div>
+    </div>
+  </div><!-- Scripts -->
+  <script src='./assets/js/skel.min.js'>
+  </script> 
+  <script src='./assets/js/util.js'>
+  </script> 
+  <script src='./assets/js/main.js'>
+  </script>
+</body>
+</html>
